@@ -1759,6 +1759,7 @@ static struct fio_file *alloc_new_file(struct thread_data *td)
 
 bool exists_and_not_regfile(const char *filename)
 {
+	return false;
 	struct stat sb;
 
 	if (lstat(filename, &sb) == -1)
